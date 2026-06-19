@@ -7,11 +7,13 @@ import os
 # Loading API key
 from dotenv import load_dotenv
 load_dotenv()
+# Optional LangSmith
+langsmith_key = os.getenv("LANGCHAIN_API_KEY")
 
-## Langsmith Tracking
-os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
-os.environ["LANGCHAIN_TRACING_V2"]="true"
-os.environ["LANGCHAIN_PROJECT"]="Simple Q&A Chatbot With Google Gen AI"
+if langsmith_key:
+    os.environ["LANGCHAIN_API_KEY"] = langsmith_key
+    os.environ["LANGCHAIN_TRACING_V2"] = "true"
+    os.environ["LANGCHAIN_PROJECT"] = "Simple Q&A Chatbot With Google Gen AI"
 
 ## Prompt Template
 prompt=ChatPromptTemplate.from_messages(
