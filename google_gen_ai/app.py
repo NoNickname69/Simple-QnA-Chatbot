@@ -96,9 +96,19 @@ if user_input and api_key:
     placeholder = st.empty()
     full_response = ""
 
-    for chunk in response:
-        full_response += chunk.content
-        placeholder.markdown(full_response)
+    try:
+        for chunk in response:
+            full_response += chunk.content
+            placeholder.markdown(full_response)
+
+    except Exception as e:
+        if "RESOURCE_EXHAUSTED" in str(e):
+            st.error(
+                "🚫 Gemini API quota exceeded.\n\n"
+                "Please use your own API key or try again later."
+            )
+        else:
+            st.error(f"❌ {e}")
 elif user_input:
     st.warning("_Please enter the AI API Key in the sidebar._")
 else:
