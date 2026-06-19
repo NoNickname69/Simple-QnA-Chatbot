@@ -12,8 +12,7 @@ Both versions demonstrate prompt engineering, model configuration, LangChain cha
 
 Try the chatbot here:
 
-**🌐** https://simple-qna-chatbot-nzkfy8u74npcylxa5fgqy9.streamlit.app/ :contentReference[oaicite:0]{index=0}
-
+**🌐** https://simple-qna-chatbot-nzkfy8u74npcylxa5fgqy9.streamlit.app/
 > **Note:** You'll need your own **Google Gemini API Key** to use the Google Gen AI version of the chatbot. You can get one for free from Google AI Studio.
 
 ---
