@@ -1,3 +1,4 @@
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://simple-qna-chatbot-nzkfy8u74npcylxa5fgqy9.streamlit.app/)
 # Q&A Chatbot with LangChain
 
 A simple Q&A chatbot built while learning **LangChain** and **Streamlit**. The project includes two implementations:
@@ -11,7 +12,7 @@ Both versions demonstrate prompt engineering, model configuration, LangChain cha
 
 Try the chatbot here:
 
-**🌐** :contentReference[oaicite:0]{index=0}
+**🌐** https://simple-qna-chatbot-nzkfy8u74npcylxa5fgqy9.streamlit.app/ :contentReference[oaicite:0]{index=0}
 
 > **Note:** You'll need your own **Google Gemini API Key** to use the Google Gen AI version of the chatbot. You can get one for free from Google AI Studio.
 
