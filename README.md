@@ -7,6 +7,16 @@ A simple Q&A chatbot built while learning **LangChain** and **Streamlit**. The p
 
 Both versions demonstrate prompt engineering, model configuration, LangChain chains, response streaming, and integration with different LLM providers.
 
+## 🚀 Live Demo
+
+Try the chatbot here:
+
+**🌐** :contentReference[oaicite:0]{index=0}
+
+> **Note:** You'll need your own **Google Gemini API Key** to use the Google Gen AI version of the chatbot. You can get one for free from Google AI Studio.
+
+---
+
 ## Features
 
 - Interactive Streamlit web interface
